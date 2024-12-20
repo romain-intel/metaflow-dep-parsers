@@ -16,7 +16,7 @@ class HelloCondaFlow(FlowSpec):
         print("HelloCondaFlow is starting.")
         self.next(self.v1, self.v2)
 
-    @conda(config_expr("v1_yml"))
+    @conda(**config_expr("v1_yml"))
     @step
     def v1(self):
         import regex
