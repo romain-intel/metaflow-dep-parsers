@@ -5,7 +5,7 @@ With the introduction of Configs in
 is now possible to provide data to decorators using Configs.
 
 This package allows you to use the following syntax:
-```
+``` python
 from metaflow import Config, pypi, FlowSpec, step
 
 class MyFlow(FlowSpec):
@@ -36,7 +36,7 @@ This library includes two parsers:
 
 If you are using the [Netflix Extensions](https://github.com/Netflix/metaflow-nflx-extensions),
 you do not need this package and can instead do:
-```
+``` python
 from metaflow import Config, pypi, FlowSpec, step, req_parser
 
 class MyFlow(FlowSpec):
